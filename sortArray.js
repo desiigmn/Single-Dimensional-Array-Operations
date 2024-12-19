@@ -1,9 +1,9 @@
 function sortArray() {
-    const numbersInput = prompt("Enter numbers (e.g., 24, 65, 21, 5, 9, 32, 42, 80, 57)");
-    const namesInput = prompt("Enter names (e.g., Zenvo, Erica, Jordie, Alicia, Redon)");
+    const inputNumbers = prompt("Enter numbers (e.g., 24, 65, 21, 5, 9, 32, 42, 80, 57)");
+    const inputNames = prompt("Enter names (e.g., Zenvo, Erica, Jordie, Alicia, Redon)");
 
-    const numbers = numbersInput ? numbersInput.split(",").map(Number) : [];
-    const names = namesInput ? namesInput.split(",") : [];
+    const numbers = inputNumbers ? inputNumbers.split(",").map(Number) : [];
+    const names = inputNames ? inputNames.split(",") : [];
 
     const mergedArray = numbers.concat(names);
     alert("Merged Array: " + mergedArray.join(", ")); 
